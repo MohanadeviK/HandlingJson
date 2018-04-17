@@ -1,0 +1,6 @@
+framework module Pods_FetchJson {
+  umbrella header "Pods-FetchJson-umbrella.h"
+
+  export *
+  module * { export * }
+}

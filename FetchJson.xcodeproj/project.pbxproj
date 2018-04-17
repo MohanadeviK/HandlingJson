@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C96ED147E7BD783F5465772 /* Pods_FetchJson.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F86E57FA0709A1ADB63D681 /* Pods_FetchJson.framework */; };
 		D34F74D4208653A600CC8937 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34F74D3208653A600CC8937 /* AppDelegate.swift */; };
 		D34F74D6208653A600CC8937 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34F74D5208653A600CC8937 /* ViewController.swift */; };
 		D34F74D9208653A600CC8937 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D34F74D7208653A600CC8937 /* Main.storyboard */; };
 		D34F74DB208653A700CC8937 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D34F74DA208653A700CC8937 /* Assets.xcassets */; };
 		D34F74DE208653A700CC8937 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D34F74DC208653A700CC8937 /* LaunchScreen.storyboard */; };
 		D34F74E6208656BD00CC8937 /* person.json in Resources */ = {isa = PBXBuildFile; fileRef = D34F74E5208656BD00CC8937 /* person.json */; };
+		D34F74E820865C9800CC8937 /* PersonDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34F74E720865C9800CC8937 /* PersonDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		015055DB847F40A391AE45EE /* Pods-FetchJson.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FetchJson.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FetchJson/Pods-FetchJson.debug.xcconfig"; sourceTree = "<group>"; };
+		1F86E57FA0709A1ADB63D681 /* Pods_FetchJson.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FetchJson.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C622A4583C1A7C823ED94A3 /* Pods-FetchJson.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FetchJson.release.xcconfig"; path = "Pods/Target Support Files/Pods-FetchJson/Pods-FetchJson.release.xcconfig"; sourceTree = "<group>"; };
 		D34F74D0208653A600CC8937 /* FetchJson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FetchJson.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D34F74D3208653A600CC8937 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D34F74D5208653A600CC8937 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		D34F74DD208653A700CC8937 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D34F74DF208653A700CC8937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D34F74E5208656BD00CC8937 /* person.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = person.json; sourceTree = "<group>"; };
+		D34F74E720865C9800CC8937 /* PersonDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C96ED147E7BD783F5465772 /* Pods_FetchJson.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2EC164DB13F7859C8DAB514A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				015055DB847F40A391AE45EE /* Pods-FetchJson.debug.xcconfig */,
+				5C622A4583C1A7C823ED94A3 /* Pods-FetchJson.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3B28BC4A94F96F8327C53E93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F86E57FA0709A1ADB63D681 /* Pods_FetchJson.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D34F74C7208653A600CC8937 = {
 			isa = PBXGroup;
 			children = (
 				D34F74D2208653A600CC8937 /* FetchJson */,
 				D34F74D1208653A600CC8937 /* Products */,
+				2EC164DB13F7859C8DAB514A /* Pods */,
+				3B28BC4A94F96F8327C53E93 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +89,7 @@
 				D34F74DA208653A700CC8937 /* Assets.xcassets */,
 				D34F74DC208653A700CC8937 /* LaunchScreen.storyboard */,
 				D34F74DF208653A700CC8937 /* Info.plist */,
+				D34F74E720865C9800CC8937 /* PersonDetails.swift */,
 			);
 			path = FetchJson;
 			sourceTree = "<group>";
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D34F74E2208653A700CC8937 /* Build configuration list for PBXNativeTarget "FetchJson" */;
 			buildPhases = (
+				594F8BA57800296121B41D16 /* [CP] Check Pods Manifest.lock */,
 				D34F74CC208653A600CC8937 /* Sources */,
 				D34F74CD208653A600CC8937 /* Frameworks */,
 				D34F74CE208653A600CC8937 /* Resources */,
+				3028F277F3A928322BFE13C6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,11 +163,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3028F277F3A928322BFE13C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FetchJson/Pods-FetchJson-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FetchJson/Pods-FetchJson-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		594F8BA57800296121B41D16 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FetchJson-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D34F74CC208653A600CC8937 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D34F74E820865C9800CC8937 /* PersonDetails.swift in Sources */,
 				D34F74D6208653A600CC8937 /* ViewController.swift in Sources */,
 				D34F74D4208653A600CC8937 /* AppDelegate.swift in Sources */,
 			);
@@ -282,14 +351,12 @@
 		};
 		D34F74E3208653A700CC8937 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 015055DB847F40A391AE45EE /* Pods-FetchJson.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FetchJson/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.FetchJson;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -299,14 +366,12 @@
 		};
 		D34F74E4208653A700CC8937 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C622A4583C1A7C823ED94A3 /* Pods-FetchJson.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FetchJson/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.FetchJson;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
